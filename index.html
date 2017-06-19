@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="A website for CS033 students at Brown University">
+        <meta name="author" content="CS033 TA Staff">
+
+        <title>CS 106A: Programming Methodology</title>
+
+        <!-- CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/cs33.css" rel="stylesheet">
+
+        <!-- Custom Fonts -->
+        <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="http://fonts.googleapis.com/css?family=Lora|Montserrat:400,700" rel="stylesheet" type="text/css">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+    </head>
+    <link rel="shortcut icon" type="image/ico" href="favicon.ico" />
+    <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+
+            <!-- Logo -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">
+                    <i class="fa fa-code"></i> CS 106A
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden"><a href="#page-top"></a></li>
+                    <li><a class="page-scroll" href="#course-info">Course Info</a></li>
+                    <li><a class="page-scroll" href="#assignments">Assignments</a></li>
+                    <li><a class="page-scroll" href="#lectures">Lectures</a></li>
+                    <li><a class="page-scroll" href="#hours">Hours</a></li>
+                    <li><a class="page-scroll" href="#staff">Staff</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+        </nav>
+
+        <!-- Intro Header -->
+        <header class="intro">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h1 class="brand-heading">CS 106A</h1>
+                        <p class="intro-text">Welcome to Programming Methods! This course is an introduction to computer programming and software development.</p>
+                        <a href="#course-info" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-double-down animated"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </header>
+
+        <!-- Course Information Section -->
+        <section id="course-info">
+        <div class="container content-section">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Course Information</h2>
+                </div>
+                <div class="col-md-7">
+                    <p>CS 106A is taught by <a href="http://www.cs.brown.edu/~twd/">Marty Stepp</a>. Lectures are held every Monday, Wednesday, and Friday, from 1:30 to 2:20 PM in Hewlett 200.</p>
+                    <p>CS 106A is a first course in computer programming and software development. You will learn techniques, programming constructs, and design strategies that form the basis for modern software. When you complete the course, you will be comfortable writing programs that interact with the user, process and manipulate data, and report information to the user textually and graphically. More importantly, you will learn how to approach problem solving from a computational perspective and gain exposure to different areas in computer science and how programming is applicable across all sorts of domains.</p>
+                </div>
+                
+            </div>
+
+            <!-- Documents & Guides -->
+            <div class="row inset-box">
+                <div class="col-md-8 col-sm-8">
+                    <h3>Guides &amp; Documents</h3>
+                    <p>Check out the following useful documents for questions you have about course organization, code style, or tools we use.</p>
+                    <ul class="col-md-4">
+                        <li><a href="docs/docs/syllabus.pdf">Course Information</a></li>
+                        <li><a href="https://goo.gl/forms/1gAyStB3tJ8TQPkM2">Honor Code and Academic Misconduct</a></li>
+            <li><a href="docs/docs/collab.pdf">Syllabus / Reading List</a></li>
+                    </ul>
+                    <ul class="col-md-4">
+                        <li><a href="docs/guides/cprimer.pdf">Course Placement</a></li>
+            <li><a href="docs/guides/style.pdf">Pair Programming FAQ</a></li>
+            <li><a href="docs/guides/tools.pdf">Using Eclipse and Karel</a></li>
+            <li><a href="docs/guides/tools.pdf">How to Submit Homework Assignments</a></li>
+                        <!-- <li>Optimization in C</li> --> <!-- Link Unavailable -->
+            <!-- <li><a href="docs/guides/buffer3.pdf">Buffer 3 Guide*</a></li> -->
+                    </ul>
+                    <ul class="col-md-4">
+                        
+            <li><a href="docs/guides/gdb.pdf">How to Package Your Program into a Jar Archive</a></li>
+            <li><a href="docs/guides/x64_cheatsheet.pdf">Java Programming Patterns</a></li>
+            <li><a href="docs/guides/x64_cheatsheet.pdf">Coding Style</a></li>
+            <li><a href="docs/guides/x64_cheatsheet.pdf">Exam Strategies</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                    <h3>Quick links</h3>
+                    <ul>
+                        <li><a href="http://web.stanford.edu/class/cs106a/piazza.shtml">Piazza</a> (ask and answer questions)</li>
+                        <li><a href="http://pointer.cs.stanford.edu/lair/shifts">LaIR Hours</a></li>
+                                                <!-- <li><a href="https://www.google.com/calendar/embed?src=brown.edu_470h7r0jngdkepvtfde88fu1t4%40group.calendar.google.com&ctz=America/New_York">Course Calendar*</a></li> -->
+                        <li><a href="http://docs.oracle.com/javase/7/docs/api/">Java API Docs</a></li>
+                        <li><a href="http://sayat.me/martystepp">Send anonymous feedback to Marty</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </section>
+
+        <!-- Assignments Section -->
+        <section id="assignments">
+        <div class="container content-section">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Assignments</h2>
+                    
+                    <div class="row">
+
+                        <!-- Projects -->
+                        <div class="col-md-5">
+                            <h3>Projects</h3>
+                            <p>All projects are due at 11:59 pm on the specified due date.</p>
+                            <table class="assignment">
+                                <tr><th>Name</th><th>Due</th></tr>
+                                <tr><td><a href="docs/proj/maze.pdf">Karel the Robot (INDIVIDUAL)</a></td><td>4/14</td></tr>
+								<tr><td><a href="docs/proj/data.pdf">Consolation Prize (PAIR)</a></td><td>4/24</td></tr>
+								<tr><td><a href="docs/proj/bomb.pdf">Hangman (PAIR)</a></td><td>5/1</td></tr>
+								<tr><td><a href="docs/proj/buffer.pdf">Breakout (PAIR)</a></td><td>5/8</td></tr>
+								<tr><td><a href="docs/proj/stringsperf.pdf">Melody Player + Image Algorithms (PAIR)</a></td><td>10/17</td></tr>
+                                <tr><td><a href="docs/proj/shell_2.pdf">Critters (PAIR)</a></td><td>5/26</td></tr>
+                                <tr><td><a href="docs/proj/shell_2.pdf">NameSurfer (PAIR)</a></td><td>6/5</td></tr>
+                            </table>
+                        </div>
+
+                        <!-- Labs -->
+                        <div class="col-md-6 col-md-offset-1">
+                            <h3>Sections</h3>
+                            <p>Our sections are 50-minute discussions led by section leaders each week in which the SL and students work together to solve problems. After Tue Apr 11 you can log in to our CS 198 site to see what section date/time/room you are in.</p>
+                            <table class="assignment">
+                                <tr><th>Name</th><th>Week</th></tr>
+                                <tr><td><a href="docs/labs/life.pdf">Section 1: Karel the Robot; Basic Java</a></td><td>4/12 - 4/14</td></tr>
+                                <tr><td><a href="docs/labs/tools.pdf">Section 2: Java Control Statements, Parameters</a></td><td>4/19 - 4/21</td></tr>
+                                <tr><td><a href="docs/labs/x86_lab1.pdf">Section 3: Strings/Characters; File Processing</a></td><td>4/26 - 4/28</td></tr>
+                                <tr><td><a href="docs/labs/x86_lab2.pdf">Section 4: Graphics, Animation, and Fields</a></td><td>5/3 - 5/5</td></tr>
+                                <tr><td><a href="docs/labs/profiling.pdf">Section 5: Arrays, Images, Pixels</a></td><td>5/10 - 5/12</td></tr>
+                                <tr><td><a href="docs/labs/makefile_lab.pdf">Section 6: Classes and Objects; Inheritance; Critters</a></td><td>5/17 - 5/19</td></tr>
+                                <tr><td><a href="docs/labs/signals.pdf">Section 7: ArrayList and HashMap</a></td><td>5/24 - 5/26</td></tr>
+                                <tr><td><a href="docs/labs/alloc_lab.pdf">Section 8: Graphical User Interfaces</a></td><td>5/31 - 6/2</td></tr>
+                            </table>
+                            <p>Are you looking for the list of section leader names and section times? That information can be found on the <a class="page-scroll" href="#staff">Staff/SLs page</a>.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+
+        <!-- Lectures -->
+        <section id="lectures">
+            <div class="container content-section">
+                <div class="row">
+                    <div class="col-md-10">
+                        <h2>Lectures</h2>
+                        <p>Lectures are held every Monday, Wednesday, and Friday, from 1:30 to 2:20 PM in Hewlett 200.</p>
+                        <table class="lecture">
+                            <tr><th>Date</th><th>Topic</th><th>Readings</th><th>Notes</th><th>Recording</th></tr>
+							<tr><td>Apr 3</td><td>Course Overview; Introduction to Karel</td><td><i>Karel</i> Ch. 1-2</td><td>[<a href="lecture/01Intro.pdf">Notes</a>]</td><td><a href="https://youtu.be/tgEq4e9nQ5E">Video</a></td></tr>
+                            <tr><td>Apr 5</td><td>Programming Karel</td><td><i>Karel</i> Ch. 2-3</td><td>[<a href="lecture/02CIntro2.pdf">Notes</a>]</td><td><a href="https://youtu.be/fuEIolDqCXI">Video</a></td></tr>
+                            <tr><td>Apr 7</td><td>Problem-solving with Karel</td><td><i>Karel</i> Ch. 4-6</td><td>[<a href="lecture/03CIntro3.pdf">Notes</a>]</td><td><a href="https://youtu.be/Jzp45sWaF-0">Video</a></td></td></tr>
+                            <tr><td>Apr 10</td><td>Console Programs; Expressions and Variables</td><td><i>A&S</i> 2.1 - 2.4, 3.1 - 3.4</td><td>[<a href="lecture/04CIntro4.pdf">Notes</a>]</td><td><a href="https://youtu.be/JVevObkjn_k">Video</a></td></tr>
+                            <tr><td>Apr 12</td><td>Control Statements Revisited; Relational and Logical Operators</td><td><i>A&S</i> 4.5, 3.2, 2.1, 2.6</td><td>[<a href="lecture/05CIntro5.pdf">Notes</a>]</td><td><a href="https://youtu.be/w0h10Nmj0sE">Video</a></td></tr>
+                            <tr><td>Apr 14</td><td>More Loops; Scope and Constants; Random Numbers</td><td><i>A&S</i> 4.5, 3.2, 2.1, 2.6</td><td>[<a href="lecture/06CIntro6.pdf">Notes</a>]</td><td><a href="https://youtu.be/VuIeVTS_6wQ">Video</a></td></tr>
+                            <tr><td>Apr 17</td><td>Parameters; Printf</td><td><i>A&S</i> 5.1 - 5.4</td><td>[<a href="lecture/07datarep1.pdf">Notes</a>]</td><td><a href="https://youtu.be/Mq3dHFL0gVo">Video</a></td></tr>
+                            <tr><td>Apr 19</td><td>Return; Boolean</td><td><i>A&S</i> 5.2 - 5.3, 6.1</td><td>[<a href="lecture/08datarep2.pdf">Notes</a>]</td><td><a href="https://youtu.be/hbl_nAwxQjg">Video</a></td></tr>
+                            <tr><td>Apr 21</td><td>Strings and Characters</td><td><i>A&S</i> 8.1 - 8.5</td><td>[<a href="lecture/09AsmIntro.pdf">Notes</a>]</td><td><a href="https://youtu.be/X5Txm7hCadI">Video</a></td></tr>
+                            <tr><td>Apr 24</td><td>File Processing</td><td><i>A&S</i> 12.4</td><td>[<a href="lecture/10x861.pdf">Notes</a>]</td><td><a href="https://youtu.be/21GOH_auZgQ">Video</a></td></tr>
+							<tr><td>Apr 26</td><td>Graphics</td><td><i>A&S</i> 9.1 - 9.3</td><td>[<a href="lecture/11x862.pdf">Notes</a>]</td><td><a href="https://youtu.be/vTybYTex2Zw">Video</a></td></tr>
+							<tr><td>Apr 28</td><td>Mouse Events; Fields</td><td><i>A&S</i> 10.1 - 10.3</td><td>[<a href="lecture/12x863.pdf">Notes</a>]</td><td>No video</td></tr>
+							<tr><td>May 1</td><td>More Events; Animation</td><td><i>A&S</i> Ch. 6</td><td>[<a href="lecture/13x864.pdf">Notes</a>]</td><td><a href="https://youtu.be/ldbQmsIbbLc">Video</a></td></tr>
+							<tr><td>May 3</td><td>Classes and Objects</td><td><i>A&S</i> Ch.6</td><td>[<a href="lecture/14archopt1.pdf">Notes</a>]</td><td>No video</td></tr>
+							<tr><td>May 5</td><td>Arrays</td><td>S<i>A&S</i> 11.1 - 11.4</td><td>[<a href="lecture/15archopt2.pdf">Notes</a>]</td><td>No video</a></td></tr>
+                            <tr><td>May 8</td><td>Multi-dimensional Arrays, Image Processing</td><td><i>A&S</i> 11.6 - 11.7</td><td>[<a href="lecture/16memhier1.pdf">Notes</a>]</td><td><a href="https://youtu.be/g3MxOjv_BWU">Video</a></td></tr>
+							<tr><td>May 10/td><td>More Arrays; Reference Semantics</td><td>N/A</td><td>[<a href="lecture/17memhier2.pdf">Notes</a>]</td><td><a href="https://youtu.be/h6K7IwJ6lVA">Video</a></td></tr>
+							<tr><td>May 12</td><td>More Classes and Objects; Inheritance</td><td><i>A&S</i> 6.6</td><td>[<a href="lecture/18cache.pdf">Notes</a>]</td><td>No video</td></tr>
+							<tr><td>May 15</td><td>Inheritance and Polymorphism</td><td><i>A&S</i> 6.6</td><td>[<a href="lecture/19OS.pdf">Notes</a>]</td><td><a href="https://youtu.be/Dshr-uTkMrM">Video</a></td></tr>
+                            <tr><td>May 17</td><td>Critters</td><td>N/A</td><td>[<a href="lecture/20files1.pdf">Notes</a>]</td><td><a href="https://youtu.be/nBHjSG4PHEo">Video</a></td></tr>
+                            <tr><td>May 19</td><td>ArrayList</td><td><i>A&S</i> 11.8</td><td>[<a href="lecture/21files2.pdf">Notes</a>]</td><td><a href="https://youtu.be/CiZYJ0sckuk">Video</a></td></tr>
+                            <tr><td>May 22</td><td>HashMap</td><td><i>A&S</i> 13.2</td><td>[<a href="lecture/22files3.pdf">Notes</a>]</td><td>No video</td></tr>
+                            <tr><td>May 24</td><td>Graphical User Interfaces (GUIs)</td><td><i>A&S</i> 10.5 - 10.7</td><td>[<a href="lecture/23signals1.pdf">Notes</a>]</td><td><a href="https://youtu.be/zvtBst3u4wY">Video</a></td></tr>
+                            <tr><td>May 26</td><td>More GUIs</td><td><i>A&S</i> 10.5 - 10.7, 14.4</td><td>[<a href="lecture/24signals2.pdf">Notes</a>]</td><td><a href="https://youtu.be/mpqS7UD03k0">Video</a></td></tr>
+                            <tr><td>May 29</td><td>Holiday!</td><td></td><td></td><td></td></tr>
+                            <tr><td>May 31</td><td>More GUIs and Events</td><td><i>A&S</i> Ch. 10</td><td>[<a href="lecture/26StorageIntro.pdf">Notes</a>]</td><td><a href="https://youtu.be/Nficeap8exs">Video</a></td></tr>
+                            <tr><td>June 2</td><td>Polymorphism, Interfaces</td><td><i>A&S</i> 6.6</td><td>[<a href="lecture/27StorageAlloc.pdf">Notes</a>]</td><td><a href="https://youtu.be/9y0TR3vrj_k">Video</a></td></tr>
+                            <tr><td>Jun 5</td><td>Transitioning to "Real" Java</td><td>N/A</td><td>[<a href="lecture/28VM.pdf">Notes</a>]</td><td><a href="https://youtu.be/gDltqRuvWf0">Video</a></td></tr>
+                            <tr><td>Jun 7</td><td>Critter Tournament; Course Wrap-up</td><td></td><td></td><td></td></tr>
+                            <tr><td>Jun 9</td><td>FINAL EXAM, 8:30 - 11:30AM!</td><td></td><td></td><td></td></tr>
+                        </table>
+
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+
+        <!-- Hours -->
+        <section id="hours">
+        <div class="container content-section">
+            <h2>Hours</h2>
+            <div class="row">
+
+                <!-- Regular hours -->
+                <div class="col-md-12">
+                    <h3>Marty's Office Hours</h3>
+                    <p>Office hours will be held in Gates B24.</p>
+                    <table class="tom-hours">
+                        <tr><td>Monday</td><td>2:40 - 4:00pm</td></tr>
+                        <tr><td>Friday</td><td>10:30 - 11:30am</td></tr>
+                        <tr><td>or by appointment</td><td></td></tr>
+                    </table>
+
+                    <h3>Section</h3>
+            <p>To find out who your section leader is, or the time/place of your section, log in to the <a href="https://cs198.stanford.edu/cs106/auth/">CS 198 web site.</a></p>
+                </div>
+            </div>
+        </div>
+        </section>
+
+        <!-- Staff -->
+        <section id="staff">
+        <div class="container content-section staff">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Staff</h2>
+                    <h4>Instructor</h4>
+                    <div class="ta">
+                        <div id="twd"></div>
+                        <p> 
+                            Marty Stepp<br>
+                            <a href="mailto:stepp@cs.stanford.edu">stepp@cs.stanford.edu</a>
+                        </p>
+                    </div>
+                    <h4>Head TA</h4>
+                    <div class="ta">
+                        <div id="gw9"></div>
+                        <p>
+                            Nick Troccoli<br>
+                            <a href="mailto:troccoli@stanford.edu">troccoli@stanford.edu</a>
+                        </p>
+                    </div>
+                    
+
+                    <h4>Section Leaders</h4>
+                    <div class="ta">
+                        <div id="ar99"></div>
+                        <p>
+                            Adam Mosharrafa<br>
+                            <a href="mailto:adammosh@stanford.edu">adammosh@stanford.edu</a>
+                        </p>
+                    </div>
+                    <div class="ta">
+                        <div id="as82"></div>
+                        <p>
+                            Anand Shankar<br>
+                            <a href="mailto:anand7@stanford.edu">anand7@stanford.edu</a>
+                        </p>
+                    </div>
+                    <div class="ta">
+                        <div id="amolinaa"></div>
+                        <p>
+                            Andrew Chang<br>
+                            <a href="mailto:achang97@stanford.edu">achang97@stanford.edu</a>
+                        </p>
+                    </div>
+                    <div class="ta">
+                        <div id="avoicumo"></div>
+                        <p>
+                            Ashley Taylor<br>
+                            <a href="mailto:ataylor4@stanford.edu">ataylor4@stanford.edu</a>
+                        </p>
+                    </div>
+                    <div class="ta">
+                        <div id="adrelich"></div>
+                        <p>
+                            Batu Balci<br>
+                            <a href="mailto:bbalci@stanford.edu">bbalci@stanford.edu</a>
+                        </p>
+                    </div>
+                    <div class="ta">
+                        <div id="achhabri"></div>
+                        <p>
+                            Belce Dogru<br>
+                            <a href="mailto:belce@stanford.edu">belce@stanford.edu</a>
+                        </p>
+                    </div>
+                    <div class="ta">
+                        <div id="bwesner"></div>
+                        <p>
+                            Charissa Plattner<br>
+                            <a href="mailto:chariss@stanford.edu">chariss@stanford.edu</a>
+                        </p>
+                    </div>
+                    <div class="ta">
+                        <div id="casteele"></div>
+                        <p>
+                            Claire Huang<br>
+                            <a href="mailto:cuang20@stanford.edu">chuang20@stanford.edu</a>
+                        </p>
+                    </div>
+                    <div class="ta">
+                        <div id="cpoudel"></div>
+                        <p>
+                            Danielle Siy<br>
+                            <a href="mailto:beasiy@stanford.edu">beasiy@stanford.edu</a>
+                        </p>
+                    </div>
+                    <div class="ta">
+                        <div id="dglauber"></div>
+                        <p>
+                            Edward Lee<br>
+                            <a href="mailto:edlee1@stanford.edu">edlee1@stanford.edu</a>
+                        </p>
+                    </div>
+                    <div class="ta">
+                        <div id="eshakhno"></div>
+                        <p>
+                            Emily Cohen<br>
+                            <a href="mailto:ecohen2@stanford.edu">ecohen2@stanford.edu</a>
+                        </p>
+                    </div>
+                    <div class="ta">
+                        <div id="fbystric"></div>
+                        <p>
+                            Fanny Chen<br>
+                            <a href="mailto:fcchen@stanford.edu">fcchen@stanford.edu</a>
+                        </p>
+                    </div>
+                    <div class="ta">
+                        <div id="gpittali"></div>
+                        <p>
+                            Gili Rusak<br>
+                            <a href="mailto:gili@stanford.edu">gili@stanford.edu</a>
+                        </p>
+                    </div>
+                    <div class="ta">
+                        <div id="hu1"></div>
+                        <p>
+                            Isabella Garcia-Camargo<br>
+                            <a href="mailto:bellagc@stanford.edu">bellagc@stanford.edu</a>
+                        </p>
+                    </div>
+                    <div class="ta">
+                        <div id="hhalvers"></div>
+                        <p>
+                            Jack Humphries<br>
+                            <a href="mailto:jhumphri@stanford.edu">jhumphri@stanford.edu</a>
+                        </p>
+                    </div>
+                    <div class="ta">
+                        <div id="jtc2"></div>
+                        <p>
+                            Janel Lee<br>
+                            <a href="mailto:jlee24@stanford.edu">jlee24@stanford.edu</a>
+                        </p>
+                    </div>
+                    <div class="ta">
+                        <div id="jglister"></div>
+                        <p>
+                            Jennie Yang<br>
+                            <a href="mailto:jenniey@stanford.edu">jenniey@stanford.edu</a>
+                        </p>
+                    </div>
+                    <div class="ta">
+                        <div id="jbellavi"></div>
+                        <p>
+                            Kate Rydberg<br>
+                            <a href="mailto:rydbergk@stanford.edu">rydbergk@stanford.edu</a>
+                        </p>
+                    </div>
+                    <div class="ta">
+                        <div id="kweingar"></div>
+                        <p>
+                            Katherine Erdman<br>
+                            <a href="mailto:kerdman@stanford.edu">kerdman@stanford.edu</a>
+                        </p>
+                    </div>
+                    <div class="ta">
+                        <div id="lscosta"></div>
+                        <p>
+                            Keanu Spies<br>
+                            <a href="mailto:keanus@stanford.edu">keanus@stanford.edu</a>
+                        </p>
+                    </div>
+                    <div class="ta">
+                        <div id="mluzuria"></div>
+                        <p>
+                            Kush Khosla<br>
+                            <a href="mailto:kkhosla@stanford.edu">kkhosla@stanford.edu</a>
+                        </p>
+                    </div>
+                    <div class="ta">
+                        <div id="msxu"></div>
+                        <p>
+                            Michael Chung<br>
+                            <a href="mailto:mchung96@stanford.edu">mchung97@stanford.edu</a>
+                        </p>
+                    </div>
+                    <div class="ta">
+                        <div id="nhyde"></div>
+                        <p>
+                            Pras Ramakrishnan<br>
+                            <a href="mailto:pras1712@stanford.edu">pras1712@stanford.edu</a>
+                        </p>
+                    </div>
+                    <div class="ta">
+                        <div id="obenabde"></div>
+                        <p>
+                            Regina Nguyen<br>
+                            <a href="mailto:renguyen@stanford.edu">renguyen@stanford.edu</a>
+                        </p>
+                    </div>
+                    <div class="ta">
+                        <div id="pclarke"></div>
+                        <p>
+                            Ryan Kurohara<br>
+                            <a href="mailto:rkuro@stanford.edu">rkuro@stanford.edu</a>
+                        </p>
+                    </div>
+                    <div class="ta">
+                        <div id="plscott"></div>
+                        <p>
+                            Tanay Kothari<br>
+                            <a href="mailto:tbacon@stanford.edu">tbacon@stanford.edu</a>
+                        </p>
+                    </div>
+                    <div class="ta">
+                        <div id="sballaku"></div>
+                        <p>
+                            Taylor Bacon<br>
+                            <a href="mailto:tbacon@stanford.edu">tbacon@stanford.edu</a>
+                        </p>
+                    </div>
+                    <div class="ta">
+                        <div id="ss97"></div>
+                        <p>
+                            Tevon Strand-Brown<br>
+                            <a href="mailto:tevonsb@stanford.edu">tevonsb@stanford.edu</a>
+                        </p>
+                    </div>
+                    <div class="ta">
+                        <div id="tachen95"></div>
+                        <p>
+                            Tobin Bell<br>
+                            <a href="mailto:trfbell@stanford.edu">trfbell@stanford.edu</a>
+                        </p>
+                    </div>
+                    <div class="ta">
+                        <div id="txia"></div>
+                        <p>
+                            Vrinda Vasavada<br>
+                            <a href="mailto:vrindav@stanford.edu">vrindav@stanford.edu</a>
+                        </p>
+                    </div>
+                    <div class="ta">
+                        <div id="wflotte"></div>
+                        <p>
+                            Wil Kautz<br>
+                            <a href="mailto:wkautz@stanford.edu">wkautz@stanford.edu</a>
+                        </p>
+                    </div>
+                    <div class="ta">
+                        <div id="wcthomps"></div>
+                        <p>
+                            Zachary Birnholz<br>
+                            <a href="mailto:zacharyb@stanford.edu">zacharby@stanford.edu</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Hidden images - TA pictures are loaded here to reduce
+        lag when a user hovers over their character picture -->
+        <div id="hidden-imgs" style="display: none;"></div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+        <div class="container text-center">
+            <p>
+            &copy; 2017 CS 016A
+            <span class="spacing">|</span>
+            <a href="http://cs.brown.edu">Computer Science Department</a>
+            <span class="spacing">|</span>
+            <a href="http://brown.edu">Stanford University</a>
+            </p>
+        </div>
+        </footer>
+
+        <!-- Javascript files -->
+        <script src="js/jquery.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.easing.min.js"></script>
+        <script src="js/cs33.js"></script>
+
+    </body>
+</html>
